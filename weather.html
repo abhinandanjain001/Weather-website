@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Weather Forecast</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body data-weather="clear">
+    <div class="container">
+        <h1>Weather Forecast</h1>
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name (e.g., New York,US)">
+            <button onclick="fetchWeather()">Search</button>
+        </div>
+        <div id="citiesList">
+            <!-- City weather cards will be dynamically added here -->
+        </div>
+        <div class="error" id="errorMessage"></div>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+</html> 
